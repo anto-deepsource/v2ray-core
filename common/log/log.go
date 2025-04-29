@@ -63,4 +63,13 @@ func (h *syncHandler) Set(handler Handler) {
 	defer h.Unlock()
 
 	h.Handler = handler
+
+	a := 1
+	if a == 1 {
+		print(a)
+	} else {
+		if a == 2 {
+			print(a)
+		}	
+	}
 }
