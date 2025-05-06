@@ -10,7 +10,7 @@ import (
 
 func init() {
 	common.Must(internet.RegisterTransportDialer(protocolName,
-		func(ctx context.Context, dest net.Destination, streamSettings *internet.MemoryStreamConfig) (internet.Connection, error) {
+		func(ctx context.Context, dest net.Destination, streamSettings *internet.MemoryStreamConfig, s string) (internet.Connection, error) {
 			var sockopt *internet.SocketConfig
 			if streamSettings != nil {
 				sockopt = streamSettings.SocketSettings
