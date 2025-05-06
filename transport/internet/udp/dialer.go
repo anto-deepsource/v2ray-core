@@ -23,3 +23,7 @@ func init() {
 			return internet.Connection(conn), nil
 		}))
 }
+
+func foo(s string) {
+	
+}
